@@ -1,0 +1,17 @@
+# graphify machine-specifieke tempbestanden (graph.html/graph.json/GRAPH_REPORT.md blijven wel mee)
+.graphify_*
+# macOS
+.DS_Store
+
+# Lokale builds en historische exports
+work/
+exports/*
+demo-brein/wiki/graphify-out/cache/
+
+# Lokale geheimen en omgevingen
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.log

@@ -1,0 +1,2192 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "cadeau_engine",
+        "label": "Cadeau-engine: positionering + hero-set + timing",
+        "nodes": [
+          "concepts_cadeau_positionering",
+          "entities_cadeauset_warm_thuis",
+          "entities_amber_en_hout",
+          "analyses_seizoenspatroon"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "concepts/cadeau-positionering.md"
+      },
+      {
+        "id": "concurrentiepositie",
+        "label": "Concurrentiepositie & differentiatie",
+        "nodes": [
+          "concepts_usps",
+          "concepts_duurzaamheid",
+          "concepts_merkstem",
+          "analyses_concurrent_vergelijking",
+          "concepts_prijsstrategie"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "concepts/usps.md"
+      },
+      {
+        "id": "assortiment_architectuur",
+        "label": "Assortiment: vaste kern + seizoenspieken",
+        "nodes": [
+          "entities_collectie_signature",
+          "entities_collectie_najaar",
+          "entities_amber_en_hout",
+          "analyses_bestseller_analyse",
+          "analyses_seizoenspatroon"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "entities/collectie-signature.md"
+      },
+      {
+        "id": "concurrentiepositionering",
+        "label": "Concurrentiepositionering \u2014 De Kaarsenhoek tussen de twee polen",
+        "nodes": [
+          "entities_de_kaarsenhoek",
+          "entities_concurrent_rituals",
+          "entities_concurrent_lokale_makers",
+          "analyses_concurrent_vergelijking"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.75,
+        "source_file": "entities/de-kaarsenhoek.md"
+      },
+      {
+        "id": "duurzaamheid_usp_pijler",
+        "label": "Duurzaamheidspijler \u2014 sojawas-inkoop onderbouwt USP's",
+        "nodes": [
+          "entities_leverancier_natuurwas",
+          "concepts_duurzaamheid",
+          "concepts_usps",
+          "entities_de_kaarsenhoek"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.75,
+        "source_file": "entities/leverancier-natuurwas.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Bestseller-analyse",
+      "file_type": "document",
+      "source_file": "analyses/bestseller-analyse.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "analyses_bestseller_analyse",
+      "community": 0,
+      "norm_label": "bestseller-analyse"
+    },
+    {
+      "label": "Concurrent-vergelijking",
+      "file_type": "document",
+      "source_file": "analyses/concurrent-vergelijking.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Bewust gepositioneerd in het gat tussen de grote premium speler (Rituals) en losse hobbymakers: wint boven op handwerk + duurzaamheid, onder op consistentie + cadeau-infrastructuur. Wig = 'handgemaakt en cadeauklaar en betrouwbaar'.",
+      "id": "analyses_concurrent_vergelijking",
+      "community": 1,
+      "norm_label": "concurrent-vergelijking"
+    },
+    {
+      "label": "Seizoenspatroon",
+      "file_type": "document",
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Kaarsen zijn seizoensgevoelig: Q4-piek (feestdagen + cadeaus), warme geuren in winter, frisse in lente, rustige zomer opgevangen door diffusers. Signature geeft stabiliteit, seizoenscollecties geven de pieken.",
+      "id": "analyses_seizoenspatroon",
+      "community": 0,
+      "norm_label": "seizoenspatroon"
+    },
+    {
+      "label": "Cadeau-positionering",
+      "file_type": "concept",
+      "source_file": "concepts/cadeau-positionering.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Positionering als het makkelijke, altijd-goed cadeau: cadeauklaar uit de doos (giftbox, kaartje, plasticvrij). Cadeau-infrastructuur is een kern-USP en voorsprong op concurrenten.",
+      "id": "concepts_cadeau_positionering",
+      "community": 2,
+      "norm_label": "cadeau-positionering"
+    },
+    {
+      "label": "Duurzaamheid",
+      "file_type": "concept",
+      "source_file": "concepts/duurzaamheid.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Duurzaamheid zit in het product zelf, niet in een keurmerk-sticker: 100% sojawas (RSPO), plasticvrij product/vulling/verpakking, lokaal handgegoten in NL, herbruikbare glazen potjes. Sterk onderscheidend van Rituals.",
+      "id": "concepts_duurzaamheid",
+      "community": 3,
+      "norm_label": "duurzaamheid"
+    },
+    {
+      "label": "Merkstem",
+      "file_type": "concept",
+      "source_file": "concepts/merkstem.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Warm, persoonlijk en licht speels, altijd je/jij; sfeer boven verkoop, nooit klinisch of opdringerig. De persoonlijke toon is zelf een USP: menselijker dan Rituals.",
+      "id": "concepts_merkstem",
+      "community": 1,
+      "norm_label": "merkstem"
+    },
+    {
+      "label": "Prijsstrategie",
+      "file_type": "concept",
+      "source_file": "concepts/prijsstrategie.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Toegankelijke premium (EUR15-45): betaalbaar genoeg om cadeau te geven, hoogwaardig genoeg om handwerk + plasticvrij te rechtvaardigen. Middenpositie onder Rituals (imago) en boven lokale makers (consistentie); EUR35 gratis-verzendgrens verhoogt de gemiddelde order.",
+      "id": "concepts_prijsstrategie",
+      "community": 1,
+      "norm_label": "prijsstrategie"
+    },
+    {
+      "label": "Retourbeleid",
+      "file_type": "concept",
+      "source_file": "concepts/retourbeleid.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Eerlijk en zonder kleine lettertjes: 14 dagen bedenktijd, ongebruikt/originele staat (kaars niet gebrand), volledige terugbetaling. Vriendelijk en oplossingsgericht gecommuniceerd.",
+      "id": "concepts_retourbeleid",
+      "community": 1,
+      "norm_label": "retourbeleid"
+    },
+    {
+      "label": "USP's",
+      "file_type": "concept",
+      "source_file": "concepts/usps.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Vijf pluspunten: handgemaakt in NL, plasticvrij, sojawas, cadeauklaar, persoonlijke toon. Samen precies de voorsprong in de concurrentie: persoonlijker dan Rituals, consistenter dan lokale makers.",
+      "id": "concepts_usps",
+      "community": 1,
+      "norm_label": "usp's"
+    },
+    {
+      "label": "Verzendbeleid",
+      "file_type": "concept",
+      "source_file": "concepts/verzendbeleid.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "PostNL, 1-2 werkdagen, plasticvrij verpakt; gratis vanaf EUR35. De EUR35-drempel stuwt richting bundels zoals de cadeauset en verhoogt de gemiddelde besteding.",
+      "id": "concepts_verzendbeleid",
+      "community": 1,
+      "norm_label": "verzendbeleid"
+    },
+    {
+      "label": "Amber & Hout",
+      "file_type": "document",
+      "source_file": "entities/amber-en-hout.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_amber_en_hout",
+      "community": 0,
+      "norm_label": "amber & hout"
+    },
+    {
+      "label": "Cadeauset Warm Thuis",
+      "file_type": "document",
+      "source_file": "entities/cadeauset-warm-thuis.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_cadeauset_warm_thuis",
+      "community": 0,
+      "norm_label": "cadeauset warm thuis"
+    },
+    {
+      "label": "Collectie Najaar",
+      "file_type": "document",
+      "source_file": "entities/collectie-najaar.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_collectie_najaar",
+      "community": 2,
+      "norm_label": "collectie najaar"
+    },
+    {
+      "label": "Collectie Signature",
+      "file_type": "document",
+      "source_file": "entities/collectie-signature.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_collectie_signature",
+      "community": 0,
+      "norm_label": "collectie signature"
+    },
+    {
+      "label": "Concurrent \u2014 Lokale Etsy-makers",
+      "file_type": "document",
+      "source_file": "entities/concurrent-lokale-makers.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_concurrent_lokale_makers",
+      "community": 1,
+      "norm_label": "concurrent \u2014 lokale etsy-makers"
+    },
+    {
+      "label": "Concurrent \u2014 Rituals",
+      "file_type": "document",
+      "source_file": "entities/concurrent-rituals.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_concurrent_rituals",
+      "community": 1,
+      "norm_label": "concurrent \u2014 rituals"
+    },
+    {
+      "label": "De Kaarsenhoek",
+      "file_type": "document",
+      "source_file": "entities/de-kaarsenhoek.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_de_kaarsenhoek",
+      "community": 1,
+      "norm_label": "de kaarsenhoek"
+    },
+    {
+      "label": "Kaneel & Kruidnagel",
+      "file_type": "document",
+      "source_file": "entities/kaneel-en-kruidnagel.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_kaneel_en_kruidnagel",
+      "community": 2,
+      "norm_label": "kaneel & kruidnagel"
+    },
+    {
+      "label": "Lavendel & Salie",
+      "file_type": "document",
+      "source_file": "entities/lavendel-en-salie.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_lavendel_en_salie",
+      "community": 3,
+      "norm_label": "lavendel & salie"
+    },
+    {
+      "label": "Leverancier \u2014 NatuurWas B.V.",
+      "file_type": "document",
+      "source_file": "entities/leverancier-natuurwas.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_leverancier_natuurwas",
+      "community": 3,
+      "norm_label": "leverancier \u2014 natuurwas b.v."
+    },
+    {
+      "label": "Reed Diffuser Vijgenblad",
+      "file_type": "document",
+      "source_file": "entities/reed-diffuser-vijgenblad.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_reed_diffuser_vijgenblad",
+      "community": 0,
+      "norm_label": "reed diffuser vijgenblad"
+    },
+    {
+      "label": "Rozen & Oud",
+      "file_type": "document",
+      "source_file": "entities/rozen-en-oud.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_rozen_en_oud",
+      "community": 2,
+      "norm_label": "rozen & oud"
+    },
+    {
+      "label": "Segment \u2014 Cadeaugevers",
+      "file_type": "document",
+      "source_file": "entities/segment-cadeaugevers.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_segment_cadeaugevers",
+      "community": 2,
+      "norm_label": "segment \u2014 cadeaugevers"
+    },
+    {
+      "label": "Segment \u2014 Sfeerzoekers",
+      "file_type": "document",
+      "source_file": "entities/segment-sfeerzoekers.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_segment_sfeerzoekers",
+      "community": 0,
+      "norm_label": "segment \u2014 sfeerzoekers"
+    },
+    {
+      "label": "Vijgenblad",
+      "file_type": "document",
+      "source_file": "entities/vijgenblad.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_vijgenblad",
+      "community": 0,
+      "norm_label": "vijgenblad"
+    },
+    {
+      "label": "Witte Thee & Bergamot",
+      "file_type": "document",
+      "source_file": "entities/witte-thee-en-bergamot.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "entities_witte_thee_en_bergamot",
+      "community": 0,
+      "norm_label": "witte thee & bergamot"
+    },
+    {
+      "label": "Index \u2014 De Kaarsenhoek brein",
+      "file_type": "document",
+      "source_file": "index.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "index",
+      "community": 2,
+      "norm_label": "index \u2014 de kaarsenhoek brein"
+    },
+    {
+      "label": "Log \u2014 wijzigingen",
+      "file_type": "document",
+      "source_file": "log.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "log",
+      "community": 0,
+      "norm_label": "log \u2014 wijzigingen"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/bestseller-analyse.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_bestseller_analyse",
+      "target": "analyses_seizoenspatroon"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/bestseller-analyse.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_bestseller_analyse",
+      "target": "concepts_verzendbeleid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/bestseller-analyse.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_bestseller_analyse",
+      "target": "entities_amber_en_hout"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/bestseller-analyse.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_bestseller_analyse",
+      "target": "entities_cadeauset_warm_thuis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/bestseller-analyse.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_bestseller_analyse",
+      "target": "entities_collectie_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/bestseller-analyse.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_bestseller_analyse",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/bestseller-analyse.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_bestseller_analyse",
+      "target": "entities_lavendel_en_salie"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/bestseller-analyse.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_bestseller_analyse",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/bestseller-analyse.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_bestseller_analyse",
+      "target": "entities_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/bestseller-analyse.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_bestseller_analyse",
+      "target": "entities_witte_thee_en_bergamot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "analyses_bestseller_analyse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "analyses_bestseller_analyse"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/concurrent-vergelijking.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_concurrent_vergelijking",
+      "target": "concepts_duurzaamheid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/concurrent-vergelijking.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_concurrent_vergelijking",
+      "target": "concepts_prijsstrategie"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/concurrent-vergelijking.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_concurrent_vergelijking",
+      "target": "concepts_usps"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/concurrent-vergelijking.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_concurrent_vergelijking",
+      "target": "entities_concurrent_lokale_makers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/concurrent-vergelijking.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_concurrent_vergelijking",
+      "target": "entities_concurrent_rituals"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/concurrent-vergelijking.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_concurrent_vergelijking",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/concurrent-vergelijking.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_concurrent_vergelijking",
+      "target": "entities_segment_cadeaugevers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/concurrent-vergelijking.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_concurrent_vergelijking",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "analyses_concurrent_vergelijking"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "analyses_concurrent_vergelijking"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_seizoenspatroon",
+      "target": "concepts_cadeau_positionering"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_seizoenspatroon",
+      "target": "entities_amber_en_hout"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_seizoenspatroon",
+      "target": "entities_cadeauset_warm_thuis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_seizoenspatroon",
+      "target": "entities_collectie_najaar"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_seizoenspatroon",
+      "target": "entities_collectie_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_seizoenspatroon",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_seizoenspatroon",
+      "target": "entities_kaneel_en_kruidnagel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_seizoenspatroon",
+      "target": "entities_reed_diffuser_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_seizoenspatroon",
+      "target": "entities_segment_cadeaugevers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_seizoenspatroon",
+      "target": "entities_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "analyses/seizoenspatroon.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "analyses_seizoenspatroon",
+      "target": "entities_witte_thee_en_bergamot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "analyses_seizoenspatroon"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "analyses_seizoenspatroon"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/cadeau-positionering.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_cadeau_positionering",
+      "target": "concepts_merkstem"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/cadeau-positionering.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_cadeau_positionering",
+      "target": "concepts_usps"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/cadeau-positionering.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_cadeau_positionering",
+      "target": "entities_cadeauset_warm_thuis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/cadeau-positionering.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_cadeau_positionering",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/cadeau-positionering.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_cadeau_positionering",
+      "target": "entities_rozen_en_oud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/cadeau-positionering.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_cadeau_positionering",
+      "target": "entities_segment_cadeaugevers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/cadeau-positionering.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_cadeau_positionering",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/amber-en-hout.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_amber_en_hout",
+      "target": "concepts_cadeau_positionering"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-najaar.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_najaar",
+      "target": "concepts_cadeau_positionering"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/concurrent-lokale-makers.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_concurrent_lokale_makers",
+      "target": "concepts_cadeau_positionering"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/kaneel-en-kruidnagel.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_kaneel_en_kruidnagel",
+      "target": "concepts_cadeau_positionering"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "concepts_cadeau_positionering"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "concepts_cadeau_positionering"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/duurzaamheid.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_duurzaamheid",
+      "target": "concepts_usps"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/duurzaamheid.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_duurzaamheid",
+      "target": "concepts_verzendbeleid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/duurzaamheid.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_duurzaamheid",
+      "target": "entities_concurrent_rituals"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/duurzaamheid.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_duurzaamheid",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/duurzaamheid.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_duurzaamheid",
+      "target": "entities_leverancier_natuurwas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/amber-en-hout.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_amber_en_hout",
+      "target": "concepts_duurzaamheid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/cadeauset-warm-thuis.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_cadeauset_warm_thuis",
+      "target": "concepts_duurzaamheid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/kaneel-en-kruidnagel.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_kaneel_en_kruidnagel",
+      "target": "concepts_duurzaamheid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/lavendel-en-salie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_lavendel_en_salie",
+      "target": "concepts_duurzaamheid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/reed-diffuser-vijgenblad.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_reed_diffuser_vijgenblad",
+      "target": "concepts_duurzaamheid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/rozen-en-oud.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_rozen_en_oud",
+      "target": "concepts_duurzaamheid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/segment-sfeerzoekers.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_segment_sfeerzoekers",
+      "target": "concepts_duurzaamheid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/vijgenblad.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_vijgenblad",
+      "target": "concepts_duurzaamheid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/witte-thee-en-bergamot.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_witte_thee_en_bergamot",
+      "target": "concepts_duurzaamheid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "concepts_duurzaamheid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/merkstem.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_merkstem",
+      "target": "concepts_usps"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/merkstem.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_merkstem",
+      "target": "entities_concurrent_rituals"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/merkstem.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_merkstem",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/merkstem.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_merkstem",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/retourbeleid.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_retourbeleid",
+      "target": "concepts_merkstem"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/concurrent-lokale-makers.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_concurrent_lokale_makers",
+      "target": "concepts_merkstem"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "concepts_merkstem"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "concepts_merkstem"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/prijsstrategie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_prijsstrategie",
+      "target": "concepts_usps"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/prijsstrategie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_prijsstrategie",
+      "target": "concepts_verzendbeleid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/prijsstrategie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_prijsstrategie",
+      "target": "entities_cadeauset_warm_thuis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/prijsstrategie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_prijsstrategie",
+      "target": "entities_concurrent_lokale_makers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/prijsstrategie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_prijsstrategie",
+      "target": "entities_concurrent_rituals"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/prijsstrategie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_prijsstrategie",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/prijsstrategie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_prijsstrategie",
+      "target": "entities_leverancier_natuurwas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/prijsstrategie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_prijsstrategie",
+      "target": "entities_reed_diffuser_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/prijsstrategie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_prijsstrategie",
+      "target": "entities_rozen_en_oud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-signature.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_signature",
+      "target": "concepts_prijsstrategie"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "concepts_prijsstrategie"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/retourbeleid.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_retourbeleid",
+      "target": "concepts_verzendbeleid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/retourbeleid.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_retourbeleid",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "concepts_retourbeleid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "concepts_retourbeleid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/usps.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_usps",
+      "target": "entities_concurrent_lokale_makers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/usps.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_usps",
+      "target": "entities_concurrent_rituals"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/usps.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_usps",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/usps.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_usps",
+      "target": "entities_leverancier_natuurwas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/lavendel-en-salie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_lavendel_en_salie",
+      "target": "concepts_usps"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/segment-sfeerzoekers.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_segment_sfeerzoekers",
+      "target": "concepts_usps"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "concepts_usps"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/verzendbeleid.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_verzendbeleid",
+      "target": "entities_cadeauset_warm_thuis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "concepts/verzendbeleid.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "concepts_verzendbeleid",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/segment-cadeaugevers.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_segment_cadeaugevers",
+      "target": "concepts_verzendbeleid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "concepts_verzendbeleid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "concepts_verzendbeleid"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/amber-en-hout.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_amber_en_hout",
+      "target": "entities_cadeauset_warm_thuis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/amber-en-hout.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_amber_en_hout",
+      "target": "entities_collectie_najaar"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/amber-en-hout.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_amber_en_hout",
+      "target": "entities_collectie_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/amber-en-hout.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_amber_en_hout",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/amber-en-hout.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_amber_en_hout",
+      "target": "entities_leverancier_natuurwas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/amber-en-hout.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_amber_en_hout",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_amber_en_hout"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "entities_amber_en_hout"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/cadeauset-warm-thuis.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_cadeauset_warm_thuis",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/cadeauset-warm-thuis.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_cadeauset_warm_thuis",
+      "target": "entities_reed_diffuser_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/cadeauset-warm-thuis.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_cadeauset_warm_thuis",
+      "target": "entities_segment_cadeaugevers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_cadeauset_warm_thuis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "entities_cadeauset_warm_thuis"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-najaar.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_najaar",
+      "target": "entities_collectie_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-najaar.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_najaar",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-najaar.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_najaar",
+      "target": "entities_kaneel_en_kruidnagel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-najaar.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_najaar",
+      "target": "entities_segment_cadeaugevers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_collectie_najaar"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "entities_collectie_najaar"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-signature.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_signature",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-signature.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_signature",
+      "target": "entities_lavendel_en_salie"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-signature.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_signature",
+      "target": "entities_rozen_en_oud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-signature.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_signature",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-signature.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_signature",
+      "target": "entities_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/collectie-signature.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_collectie_signature",
+      "target": "entities_witte_thee_en_bergamot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_collectie_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "entities_collectie_signature"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/concurrent-lokale-makers.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_concurrent_lokale_makers",
+      "target": "entities_concurrent_rituals"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/concurrent-lokale-makers.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_concurrent_lokale_makers",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_concurrent_lokale_makers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/concurrent-rituals.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_concurrent_rituals",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_concurrent_rituals"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/de-kaarsenhoek.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_de_kaarsenhoek",
+      "target": "entities_kaneel_en_kruidnagel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/de-kaarsenhoek.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_de_kaarsenhoek",
+      "target": "entities_lavendel_en_salie"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/de-kaarsenhoek.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_de_kaarsenhoek",
+      "target": "entities_leverancier_natuurwas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/de-kaarsenhoek.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_de_kaarsenhoek",
+      "target": "entities_reed_diffuser_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/de-kaarsenhoek.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_de_kaarsenhoek",
+      "target": "entities_rozen_en_oud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/de-kaarsenhoek.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_de_kaarsenhoek",
+      "target": "entities_segment_cadeaugevers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/de-kaarsenhoek.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_de_kaarsenhoek",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/de-kaarsenhoek.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_de_kaarsenhoek",
+      "target": "entities_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/de-kaarsenhoek.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_de_kaarsenhoek",
+      "target": "entities_witte_thee_en_bergamot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "entities_de_kaarsenhoek"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/kaneel-en-kruidnagel.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_kaneel_en_kruidnagel",
+      "target": "entities_leverancier_natuurwas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/kaneel-en-kruidnagel.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_kaneel_en_kruidnagel",
+      "target": "entities_segment_cadeaugevers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_kaneel_en_kruidnagel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/lavendel-en-salie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_lavendel_en_salie",
+      "target": "entities_leverancier_natuurwas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/lavendel-en-salie.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_lavendel_en_salie",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_lavendel_en_salie"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/leverancier-natuurwas.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_leverancier_natuurwas",
+      "target": "entities_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/rozen-en-oud.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_rozen_en_oud",
+      "target": "entities_leverancier_natuurwas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/witte-thee-en-bergamot.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_witte_thee_en_bergamot",
+      "target": "entities_leverancier_natuurwas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_leverancier_natuurwas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/reed-diffuser-vijgenblad.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_reed_diffuser_vijgenblad",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/reed-diffuser-vijgenblad.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_reed_diffuser_vijgenblad",
+      "target": "entities_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_reed_diffuser_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/rozen-en-oud.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_rozen_en_oud",
+      "target": "entities_segment_cadeaugevers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_rozen_en_oud"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/segment-cadeaugevers.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_segment_cadeaugevers",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_segment_cadeaugevers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/vijgenblad.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_vijgenblad",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "entities/witte-thee-en-bergamot.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "entities_witte_thee_en_bergamot",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_segment_sfeerzoekers"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "entities_vijgenblad"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "entities_witte_thee_en_bergamot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "log.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "log",
+      "target": "entities_witte_thee_en_bergamot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "index",
+      "target": "log"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "cadeau_engine",
+      "label": "Cadeau-engine: positionering + hero-set + timing",
+      "nodes": [
+        "concepts_cadeau_positionering",
+        "entities_cadeauset_warm_thuis",
+        "entities_amber_en_hout",
+        "analyses_seizoenspatroon"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "concepts/cadeau-positionering.md"
+    },
+    {
+      "id": "concurrentiepositie",
+      "label": "Concurrentiepositie & differentiatie",
+      "nodes": [
+        "concepts_usps",
+        "concepts_duurzaamheid",
+        "concepts_merkstem",
+        "analyses_concurrent_vergelijking",
+        "concepts_prijsstrategie"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "concepts/usps.md"
+    },
+    {
+      "id": "assortiment_architectuur",
+      "label": "Assortiment: vaste kern + seizoenspieken",
+      "nodes": [
+        "entities_collectie_signature",
+        "entities_collectie_najaar",
+        "entities_amber_en_hout",
+        "analyses_bestseller_analyse",
+        "analyses_seizoenspatroon"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "entities/collectie-signature.md"
+    },
+    {
+      "id": "concurrentiepositionering",
+      "label": "Concurrentiepositionering \u2014 De Kaarsenhoek tussen de twee polen",
+      "nodes": [
+        "entities_de_kaarsenhoek",
+        "entities_concurrent_rituals",
+        "entities_concurrent_lokale_makers",
+        "analyses_concurrent_vergelijking"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "entities/de-kaarsenhoek.md"
+    },
+    {
+      "id": "duurzaamheid_usp_pijler",
+      "label": "Duurzaamheidspijler \u2014 sojawas-inkoop onderbouwt USP's",
+      "nodes": [
+        "entities_leverancier_natuurwas",
+        "concepts_duurzaamheid",
+        "concepts_usps",
+        "entities_de_kaarsenhoek"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "entities/leverancier-natuurwas.md"
+    }
+  ],
+  "built_at_commit": "66ffcab28442e6419e5c339651b307f905767e38"
+}
